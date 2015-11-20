@@ -18,6 +18,8 @@ header {
 	height: 100px;
 	margin: 200px auto 0;
 	background: url("../images/Logo_noChain.png") no-repeat;
+	color: #eee;
+	text-decoration: none;
 	padding-left: 100px;
 }
 
