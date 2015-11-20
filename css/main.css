@@ -1,0 +1,44 @@
+
+body {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	position: relative;
+	background-color: #8888ff;
+	height: 500px;
+	text-align: center;
+	color: #eee;
+}
+
+.headerlogo {
+	display: inline-block;
+	height: 100px;
+	margin: 200px auto 0;
+	background: url("../images/Logo_noChain.png") no-repeat;
+	padding-left: 100px;
+}
+
+.headerlogo h1 {
+	display: inline-block;
+	font-size: 80px;
+	line-height: 80px;
+	margin: 10px 0 0 10px;
+}
+
+header nav {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	text-align: right;
+	padding: 10px;
+}
+
+#content {
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 10px;
+}
