@@ -9,47 +9,17 @@
 		<link rel="icon" type="image/png" href="images/logo_noChain_square_icon.png" sizes="16x16">
 
 		<link rel="stylesheet" href="./css/main.css">
-		<link rel="stylesheet" href="./css/carousel.css">
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="./scripts/main.js"></script>
+		<script src="./scripts/text-writer.js"></script>
 
 	</head>
 
-	<body>
+	<body onload="init()">
 
-		<div class="slider">
-
-			<input type="radio" name="slider" title="Main" checked="checked" class="slider__nav"/>
-			<input type="radio" name="slider" title="slide2" class="slider__nav"/>
-			<input type="radio" name="slider" title="slide3" class="slider__nav"/>
-			<input type="radio" name="slider" title="slide4" class="slider__nav"/>
-
-			<div class="slider__inner">
-
-				<div class="slider__contents">
-					<img src="images/logo_noChain_square.png" alt="Sir Geoffers">
-					<h2 class="slider__caption">Sir Geoffers</h2>
-					<p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
-				</div>
-
-				<div class="slider__contents">
-					<i class="slider__image fa fa-fort-awesome"></i>
-					<h2 class="slider__caption">Projects</h2>
-					<p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
-				</div>
-
-				<div class="slider__contents">
-					<i class="slider__image fa fa-github"></i>
-					<h2 class="slider__caption">Github</h2>
-					<p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
-				</div>
-
-				<div class="slider__contents"><i class="slider__image fa fa-envelope-o"></i>
-					<h2 class="slider__caption">Contact</h2>
-					<p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
-				</div>
-
-			</div>
-			
-		</div>
+		<div class='title'>My name is <div class='highlight' style="display:inline;">Jeff Bauer</div></div>
+		<div id='text-writer' class='title'></div>
 
 	</body>
 

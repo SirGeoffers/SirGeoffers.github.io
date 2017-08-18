@@ -1,0 +1,11 @@
+{
+    "files": [
+        "./scripts/main.ts",
+        "./scripts/text-writer.ts"
+    ],
+    "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "es5",
+    "lib": [ "es2015", "dom" ]
+    }
+}
