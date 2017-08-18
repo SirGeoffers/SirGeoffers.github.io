@@ -52,3 +52,21 @@
 #projects > .header {
     font-size: 34px;
 }
+
+.project {
+    overflow: auto;
+}
+
+.project > .name {
+    font-size: 28px;
+}
+
+.project > img {
+    float: left;
+    display: block;
+    margin: 10px 10px 0 0;
+}
+
+.project > .description {
+    font-size: 20px;
+}

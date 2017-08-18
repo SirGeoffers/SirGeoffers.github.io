@@ -2,11 +2,14 @@
     "files": [
         "./scripts/main.ts",
         "./scripts/text-writer.ts",
-        "./scripts/external-links.ts"
+        "./scripts/external-links.ts",
+        "./scripts/projects.ts"
     ],
     "compilerOptions": {
-    "noImplicitAny": true,
-    "target": "es5",
-    "lib": [ "es2015", "dom" ]
+        "module": "system",
+        "noImplicitAny": true,
+        "target": "es5",
+        "outFile": "./scripts/_out.js",
+        "lib": [ "es2015", "dom" ]
     }
 }
