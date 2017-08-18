@@ -2,9 +2,21 @@
 * {
     background-color: #222426;
     font-family: "Raleway", sans-serif;
+    color: #ddd;
 }
 
-.title {
+.button {
+    background-color: #222426;
+    color: #ddd;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: solid 2px #ddd;
+    padding: 7px 10px 7px 10px;
+}
+
+#title {
+    margin: 40px 0 40px 0;
     text-align: center;
     font-size: 38px;
     color: #ddd;
@@ -14,12 +26,29 @@
     -ms-user-select: none; /* IE10+ */
 }
 
-.title:hover {
+#title:hover {
     cursor: default;
 }
 
-.title > .highlight {
+#title > .highlight {
     font-size: 43px;
     color: #00f6ed;
     font-weight: 600;
+}
+
+#external-links {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#external-links > .button {
+    margin: 0 10px 0 10px;
+}
+
+#projects {
+    margin: 0 15% 0 15%;
+}
+
+#projects > .header {
+    font-size: 34px;
 }

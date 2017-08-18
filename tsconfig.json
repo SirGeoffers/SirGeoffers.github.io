@@ -1,7 +1,8 @@
 {
     "files": [
         "./scripts/main.ts",
-        "./scripts/text-writer.ts"
+        "./scripts/text-writer.ts",
+        "./scripts/external-links.ts"
     ],
     "compilerOptions": {
     "noImplicitAny": true,
