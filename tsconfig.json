@@ -9,7 +9,7 @@
         "module": "system",
         "noImplicitAny": true,
         "target": "es5",
-        "outFile": "./scripts/_out.js",
+        "outFile": "./scripts/out/main.js",
         "lib": [ "es2015", "dom" ]
     }
 }

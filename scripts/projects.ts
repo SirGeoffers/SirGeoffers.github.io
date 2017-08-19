@@ -8,8 +8,8 @@ class Portfolio {
 
             let projectStr = '<hr>';
             projectStr += '<div class="project">';
-            projectStr += '<div class="name">' + project.name + '</div>';
             projectStr += '<img src="./images/' + project.imagePath + '"></img>';
+            projectStr += '<div class="name">' + project.name + '</div>';
             projectStr += '<div class="description">' + project.description + '</div>';
 
             $container.append(projectStr);
