@@ -3,6 +3,26 @@ body {
 	background-color: #f9f9f9;
 }
 
+a {
+	text-decoration: none;
+}
+
+nav-link > a {
+	color: #222;
+}
+
+nav-link > a:hover {
+	color: #222;
+}
+
+nav-link > a.selected {
+	color: #8cb1a1;
+}
+
+.vertical-spacing {
+	height: 20px;
+}
+
 .title {
 	text-align: center;
 }
@@ -30,12 +50,31 @@ body {
 
 .footer-content {
 	text-align: center;
-}
-
-.footer-content svg {
 	fill: #222;
+	transition: 0.5s ease;
 }
 
-.footer-content svg:not(:last-child) {
-	margin-right: 5px;
+.footer-content > .fake {
+	fill: #222;
+	transition: 0.5s ease;
+}
+
+.footer-content > .fake:hover {
+	fill: #bbb;
+	transition: 0.5s ease;
+}
+
+.footer-content > .fake > .real {
+	fill: #222;
+	margin-top: -31px;
+}
+
+.footer-content > .fake > .real svg {
+	opacity: 0;
+	transition: 0.5s ease;
+}
+
+.footer-content > .fake > .real svg:hover {
+	opacity: 1;
+	transition: 0.5s ease;
 }
