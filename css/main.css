@@ -27,3 +27,15 @@ body {
 	opacity: 0.7;
 	transition: 0.5s ease;
 }
+
+.footer-content {
+	text-align: center;
+}
+
+.footer-content svg {
+	fill: #222;
+}
+
+.footer-content svg:not(:last-child) {
+	margin-right: 5px;
+}
