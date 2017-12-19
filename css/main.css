@@ -7,15 +7,15 @@ a {
 	text-decoration: none;
 }
 
-nav-link > a {
+.nav-link > a {
 	color: #222;
 }
 
-nav-link > a:hover {
+.nav-link > a:hover {
 	color: #222;
 }
 
-nav-link > a.selected {
+.nav-link > a.selected {
 	color: #8cb1a1;
 }
 
