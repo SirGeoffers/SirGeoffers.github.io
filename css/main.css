@@ -1,17 +1,15 @@
 body {
 	font-family: 'Montserrat';
 	background-color: #f9f9f9;
+	user-select: none;
 }
 
 a {
+	color: #222;
 	text-decoration: none;
 }
 
-.nav-link > a {
-	color: #222;
-}
-
-.nav-link > a:hover {
+a:hover {
 	color: #222;
 }
 
@@ -23,6 +21,11 @@ a {
 	height: 20px;
 }
 
+.horizontal-spacing {
+	display: inline-block;
+	width: 1px;
+}
+
 .title {
 	text-align: center;
 }
@@ -30,22 +33,6 @@ a {
 .nav-link {
 	text-align: center;
 	cursor: pointer;
-}
-
-.project-item {
-	text-align: center;
-	cursor: pointer;
-	opacity: 1.0;
-	transition: 0.5s ease;
-}
-
-.project-item img {
-	width:100%;
-}
-
-.project-item:hover {
-	opacity: 0.7;
-	transition: 0.5s ease;
 }
 
 .footer-content {
