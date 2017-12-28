@@ -5,16 +5,16 @@ body {
 	user-select: none;
 }
 
-a {
+a.bare {
 	color: #222;
 	text-decoration: none;
 }
 
-a:hover {
+a.bare:hover {
 	color: #222;
 }
 
-.nav-link > a.selected {
+.nav-link > a.bare.selected {
 	color: #8cb1a1;
 }
 
