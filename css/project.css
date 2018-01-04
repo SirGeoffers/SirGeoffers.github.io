@@ -1,5 +1,6 @@
-.content > a {
+a {
 	text-decoration: underline;
+	color: #e45f5f;
 }
 
 .centered {
