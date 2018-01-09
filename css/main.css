@@ -40,6 +40,7 @@ a.bare:hover {
 	text-align: center;
 	fill: #222;
 	transition: 0.5s ease;
+	padding-bottom: 40px;
 }
 
 .footer-content > .fake {
