@@ -19,14 +19,14 @@
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/skeleton.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/skeleton.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/project.css">
 
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="../images/logo_noChain_square.png">
+    <link rel="icon" type="image/png" href="../../images/logo_noChain_square.png">
 </head>
 <body>
 
@@ -39,18 +39,18 @@
 
         <div class="row">
             <div class="title">
-                <h1><img src="../images/logo_noChain_square.png" style="vertical-align:middle;margin-right: 10px;"><span style="vertical-align:middle;">JEFF BAUER</span></h1>
+                <h1><img src="../../images/logo_noChain_square.png" style="vertical-align:middle;margin-right: 10px;"><span style="vertical-align:middle;">JEFF BAUER</span></h1>
             </div>
         </div>
 
         <!-- Navbar -->
         <div class="row">
             <div class="two columns offset-by-two nav-link">
-                <a href="../index.html" class="bare">PORTFOLIO</a>
+                <a href="../../index.html" class="bare selected">PORTFOLIO</a>
                 <div class="vertical-spacing"></div>
             </div>
             <div class="two columns nav-link">
-                <a href="about.html" class="bare selected">ABOUT</a>
+                <a href="../about.html" class="bare">ABOUT</a>
                 <div class="vertical-spacing"></div>
             </div>
             <div class="two columns nav-link">
@@ -63,23 +63,52 @@
             </div>
         </div>
         
-        <!-- About Content -->
+        <!-- Project Content -->
         <div class="row">
-            <div class="five columns">
-                <img src="../images/me.jpg" style="width:100%;">
+            <h4>GRAPHICS</h4>
+            <b>Tools:</b> Unity3D, Blender, GIMP
+            <br />
+            <b>Languages:</b> HLSL, C#
+            <div class="vertical-spacing"></div>
+            <h3>About</h3>
+            This page contains some of the small projects that I have developed while learning about shader language.
+            <h3>Winston's Barrier Projector</h3>
+            <div class="centered" style="width:75%;">
+                <video width="100%" autoplay loop controls>
+                    <source src="./images/g-winston.webm" type="video/webm">
+                </video>
             </div>
-            <div class="seven columns" style="text-align:justify">
-                <div class="vertical-spacing"></div>
-                <h4>ABOUT ME</h4>
-                My name is Jeff Bauer.  I am a currently enrolled in RIT, where I am currently working towards my MS for Game Design & Development.
-                Previously, I have also earned my BS/MS degree for Computer Science with a focus in computer graphics from RIT.
-                I have multiple years of professional software development experience, having worked at companies like Microsoft and Oracle.
-                I spend my free time designing and developing prototypes for games and furthering my shader skills/knowledge.
-                <div class="vertical-spacing"></div>
-                You can check out some of my completed work on the <a href="../index.html">Portfolio</a> page or look and some smaller/experimental work on my <a href="https://twitter.com/SirGeoffersDev">Twitter</a>.
+            <div class="vertical-spacing"></div>
+            The barrier is a transparent shader.  It uses a depth buffer to determine where the shield intersects with other objects by comparing the value in the depth buffer to the position of the geometry being rendered.
+            Using this intersection knowledge, a rim light can be rendered around the edge of the barrier.
+            It uses a hexagonal pattern that is brightened strip along the y axis and a couple of particle systems for creating the beam in the center.
+            One of the more difficult aspects to this shader was creating a model that had uvs that wrapped nicely around the top and bottom of the sphere.  Some distortion can still be seen around the top since my sphere did not
+            have a lot of triangles.
+            <div class="vertical-spacing"></div>
+            <div class="centered"><img src="./images/g-winston2.png" style="width:50%;"></div>
+            <div class="vertical-spacing"></div>
+            <h3>Wind Waker's Shoreline</h3>
+            <div class="centered" style="width:75%;">
+                <video width="100%" autoplay loop controls>
+                    <source src="./images/g-windwaker.webm" type="video/webm">
+                </video>
             </div>
+            <div class="vertical-spacing"></div>
+            This set of shaders was built to mimic the shoreline seen in The Legend of Zelda: The Wind Waker.
+            The model is composed of three section, one for the outer waves, one for the inner waves, and one for the damp sand underneath.
+            The biggest hiccup that I had while developing these shaders was the geometry layout.  Originally, every section was at the same height, so I was running into issues with the z-buffer.
+            After doing some more researching into how the original game had it set up, I found that each layer (damp sand, then inner waves, then outer waves) is slightly higher than the previous to avoid these issues.
+            <div class="vertical-spacing"></div>
+            <h3>Dissolve Shader</h3>
+            <div class="centered" style="width:75%;">
+                <video width="100%" autoplay loop controls>
+                    <source src="./images/g-dissolve.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="vertical-spacing"></div>
+            This is a simple dissolve shader that uses the model's local coordinates to generate an animated dissolve with perlin noise.
+            <div class="vertical-spacing"></div>
         </div>
-        <div class="vertical-spacing"></div>
 
         <!-- Footer -->
         <div class="row">
